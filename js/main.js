@@ -208,7 +208,7 @@ function iniciar() {
         setInterval(AutoRotate, 5000);
     });
 
-    let URLJSON = "/data/clientes.json"
+    let URLJSON = "data/clientes.json"
     $.getJSON(URLJSON, function (respuesta, estado) {
         if (estado === "success") {
             let clientes = respuesta;
