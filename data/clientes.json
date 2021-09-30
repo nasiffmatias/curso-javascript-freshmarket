@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "nombre": "Miguel Nucci",
+        "avatar": "https://images.unsplash.com/photo-1527980965255-d3b416303d12?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80",
+        "email": "miguelnucci@april.biz",
+        "opinion": "Muy buenos productos, calidad de excelencia."
+    },
+    {
+        "id": 2,
+        "nombre": "Aldana García",
+        "avatar": "https://images.unsplash.com/photo-1534330786040-317bdb76ccff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1432&q=80",
+        "email": "a75garcia@melissa.com",
+        "opinion": "Espectacular!, lo envían en el horario acordado. Las frutas y verduras son muy buenas."
+    
+    },
+    {
+        "id": 3,
+        "nombre": "Natalia Granatto",
+        "avatar": "https://images.unsplash.com/photo-1530577197743-7adf14294584?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1401&q=80",
+        "email": "nolocreo69@yesenia.net",
+        "opinion": "Muy buena relación precio/calidad. El repartidor muy amable"
+
+    },
+    {
+        "id": 4,
+        "nombre": "Ezequiel Morales",
+        "avatar": "https://images.unsplash.com/photo-1586287011575-a23134f797f9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80",
+        "email": "moramorales@mailya.net",
+        "opinion": "Muy buenos precios! Llegó rápido, todo fresco, tal cual lo pedí"
+    }
+]

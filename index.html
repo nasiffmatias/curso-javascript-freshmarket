@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Javascript - Proyecto Final - FreshMarket</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://kit.fontawesome.com/0ee964ebc6.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="main">
+
+        <!--Header-->
+        <div class="header">
+            <div id="navbar" class="nav fade-in">
+                <img class="logo" src="assets/img/fmLogo.png" alt="logo">
+                <button id="showCart" class="btnCart"><img src="assets/img/shopping-cart-white.svg" alt="carrito"></button>
+                <div id="counter" class="counter"></div>
+            </div>
+        </div>
+
+        <!-- Cart -->
+        <div id="overlayCart" class="overlay">
+            <div id="sideCart" class="sideCart">
+                <div class="sideCart-header">
+                    <h2>Carrito</h2>
+                    <span id="closeCart" class="close">&times;</span>                    
+                </div>
+                <div class="sideCart-body">
+                    <div id="cartContent" class="cartContent">
+                        <p id="cartMessageIntro"></p>
+                        <table>
+                            <thead id="cartHeading">
+
+                            </thead>
+                            <tbody id="cartItems" class="cartItems">
+                        
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="sideCart-footer">
+                    <h2 class="cartTotal"></h2>
+                    <div class="cartFooter">
+                        <button id="buyButton" class="button button-green">COMPRAR</button>
+                        <button id="clearCartButton" class="button button-red">VACIAR</button></div>
+                    </div>
+                </div>
+            </div>
+        
+        
+        <!-- Hero Banner -->
+        <div class="heroBanner">
+            <form id="searchBar">
+                <h2>De la huerta a tu casa</h2>
+                <div class="searchBarItems">
+                    <input class="searchBarInput" type="search" id="search" placeholder="Producto..." autocomplete="off">
+                    <input class="searchBarButton" type="submit" value="BUSCAR">
+                </div>
+            </form>
+        </div>
+
+        <!--Principal-->
+        <div class="container">
+            <div class="row">
+        
+                <div class="sectionTitle">
+            
+                </div>
+                <div class="w-20">
+                    <aside class="aside">
+                        <h3>Categoría:</h3>
+                        <div class="">
+                            <input id="option-todos" name="categoria" value="Todos" type="radio">
+                            <label for="option-todos"> <span></span>Todos</label> 
+                            <input id="option-frutas" name="categoria" value="Frutas" type="radio"> 
+                            <label for="option-frutas"> <span></span>Frutas</label>
+                            <input id="option-verduras" name="categoria" value="Verduras" type="radio">
+                            <label for="option-verduras"> <span></span>Verduras</label> 
+                            <input id="option-hierbas" name="categoria" value="Hierbas" type="radio"> 
+                            <label for="option-hierbas"> <span></span>Hierbas</label>
+                        </div>
+
+                    </aside>
+                </div>
+
+                <div class="w-80">
+                    <div class="row">
+                        <div id="section" class="section">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        
+        </div>
+        <br>
+        <br>
+
+        <!-- Testimonials -->
+        <div class="testimonial_slider_2">
+            <input type="radio" name="slider_2" id="slide_2_1" checked />
+            <input type="radio" name="slider_2" id="slide_2_2" />
+            <input type="radio" name="slider_2" id="slide_2_3" />
+            <input type="radio" name="slider_2" id="slide_2_4" />
+            <div id="sliderContainer" class="boo_inner clearfix">
+                <!-- Testimonios agregados desde JSON-->
+        
+            </div>
+            <div id="controls">
+                <label class="control" for="slide_2_1"></label>
+                <label class="control" for="slide_2_2"></label>
+                <label class="control" for="slide_2_3"></label>
+                <label class="control" for="slide_2_4"></label>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <section>
+                <h3>Seguinos en</h3>
+                <ul>
+                    <li><a href="http://www.facebook.com" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                    <li><a href="http://www.twitter.com" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="http://www.instagram.com" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                </ul>
+            </section>
+            <hr>
+            <div>
+                <p>Desarrollado con ❤️️ y ☕ por Matías Nasiff</p>
+            </div>
+        </div>
+
+        <!-- Payment Modal -->
+        <div id="paymentModal" class="modal padt-2">
+            <!-- Modal content -->
+            <div class="modal-content animate-top">
+                <div class="modal-header">
+                    <span class="close">&times;</span>                    
+                </div>
+
+                <br>
+                <div class="modal-body">
+
+                    <!-- Form -->
+                    <h2 class="text-center"></h2>
+                    <div class="row">
+                        <div class="containerForm">
+                            <form id="form">
+                                <div class="row">
+                                    <div class="col-50">
+                                        <h3>Datos Personales</h3>
+                                        <br>
+                                        <label for="fnombreCompleto">Nombre y Apellido</label>
+                                        <input type="text" id="fnombreCompleto" name="nombreCompleto" placeholder="Juan Perez" required value="Juan Perez">
+                                        <div class="row">
+                                            <div class="col-50">
+                                                <label for="fDni">DNI</label>
+                                                <input type="text" id="fDni" name="dni" placeholder="11111111" required value="11111111">
+                                            </div>
+                                            <div class="col-50">
+                                                <label for="fTelefono">Telefono</label>
+                                                <input type="text" id="fTelefono" name="telefono" placeholder="5696969" required value="5696969">
+                                            </div>
+                                        </div>
+                                        <label for="fDireccion">Dirección</label>
+                                        <input type="text" id="fDireccion" name="direccion" placeholder="Callecita 123" required value="Callecita 123">
+                                        <label for="fEmail">Email</label>
+                                        <input type="text" id="fEmail" name="email" placeholder="juanperez@mail.com" required value="juanperez@mail.com">
+                                    </div>
+
+                                    <div class="col-50">
+                                        <h3>Datos de pago</h3>
+                                        <br>
+                                        <label for="fNombreTarjeta">Nombre del titular</label>
+                                        <input type="text" id="fNombreTarjeta" name="nombreTarjeta" placeholder="Juan Perez" required value="Juan Perez">
+                                        <label for="fNumTarjeta">Número de tarjeta</label>
+                                        <input type="text" id="fNumTarjeta" name="numeroTarjeta" placeholder="1111-2222-3333-4444" required value="1111-2222-3333-4444">
+                                        <div class="row">
+                                            <div class="col-50">
+                                                <label for="fVencTarjeta">Fecha de Vencimiento</label>
+                                                <input type="text" id="fVencTarjeta" name="vencTarjeta" placeholder="01/01/2023" required value="01/01/2023">
+                                            </div>
+                                            <div class="col-50">
+                                                <label for="fcvv">CVV</label>
+                                                <input type="text" id="fcvv" name="cvv" placeholder="123" required value="123">
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <button type="submit" id="paymentButton" class="button-rect-green">FINALIZAR</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Success Modal -->
+        <div id="successModal" class="modal padt-10">
+            <!-- Modal content -->
+            <div class="modal-content animate-top w-max-content">
+                <span class="close">&times;</span>
+                <br>
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
+                    <circle class="path circle" fill="none" stroke="#42bf28" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1"/>
+                    <polyline class="path check" fill="none" stroke="#42bf28" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10" points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
+                </svg>
+                <br>
+        
+                <div id="successMessage" class="text-center animate__animated animate__bounceIn">
+                </div>
+
+            </div>
+        </div>
+        
+
+    </div>
+    <div id="alert" class="alert"></div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+
