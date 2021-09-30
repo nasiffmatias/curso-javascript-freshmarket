@@ -223,7 +223,7 @@ function iniciar() {
                                                         <p><strong>-${cliente.nombre}-</strong></p>
                                                     </div>
                                                 </div>
-                                          </div>`)
+                                            </div>`)
             }
         }
     });
@@ -448,11 +448,11 @@ function finalizarContador() {
 /*--Función para finalizar compra--*/
 function finalizarCompra(e) {
     e.preventDefault();
-    let nombreCliente = document.getElementsByTagName('input')[6].value;
-    let dniCliente = document.getElementsByTagName('input')[7].value;
-    let direccionCliente = document.getElementsByTagName('input')[9].value;
-    let telefonoCliente = document.getElementsByTagName('input')[8].value;
-    let emailCliente = document.getElementsByTagName('input')[10].value;
+    let nombreCliente = document.getElementsByTagName('input')[10].value;
+    let dniCliente = document.getElementsByTagName('input')[11].value;
+    let direccionCliente = document.getElementsByTagName('input')[13].value;
+    let telefonoCliente = document.getElementsByTagName('input')[12].value;
+    let emailCliente = document.getElementsByTagName('input')[14].value;
 
     let nuevoCliente = new Cliente(nombreCliente, dniCliente, direccionCliente, telefonoCliente, emailCliente, carrito);
     clientes.push(nuevoCliente);
